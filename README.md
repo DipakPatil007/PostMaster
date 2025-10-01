@@ -17,7 +17,7 @@ The app is built using **SwiftUI** with the **MVVM architecture** pattern.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/posts-mvvm-swiftui.git
+   git clone https://github.com/DipakPatil007/PostMaster.git
 Open the project in Xcode:
 
 bash
@@ -29,37 +29,37 @@ Build & run the app on a simulator or device (⌘ + R).
 ---
 
 📱 Requirements
-iOS: 15.0+
+✅ iOS: 15.0+
 
-Xcode: 15+
+✅ Xcode: 15+
 
-Swift: 5.9+
+✅ Swift: 5.9+
 
 ---
 
-🏛 Architecture (MVVM)
+## 🏛 Architecture (MVVM)
 Model:
-Defines the Post data structure, conforming to Codable for JSON parsing.
+- Defines the Post data structure, conforming to Codable for JSON parsing.
 
 ViewModel:
 
-Handles API calls via APIService.
+- Handles API calls via APIService.
 
-Manages UI state (isLoading, errorMessage, favorites).
+- Manages UI state (isLoading, errorMessage, favorites).
 
-Provides filtered/favorite post lists.
+- Provides filtered/favorite post lists.
 
 View:
 
-Uses SwiftUI views (PostsListView, PostDetailView, FavoritesView).
+- Uses SwiftUI views (PostsListView, PostDetailView, FavoritesView).
 
-Updates automatically by observing the ViewModel with @StateObject / @Published.
+- Updates automatically by observing the ViewModel with @StateObject / @Published.
 
-Splash screen with SF Symbol before loading main content.
+- Splash screen with SF Symbol before loading main content.
 
 ---
 
-🎯 Features
+## 🎯 Features
 ✅ Fetch posts with async/await networking
 
 ✅ Real-time search by title
@@ -74,16 +74,16 @@ Splash screen with SF Symbol before loading main content.
 
 ---
 
-💡 Assumptions & Improvements
+## 💡 Assumptions & Improvements
 Favorites are stored locally in UserDefaults. With more time, I’d:
 
-Add Core Data or CloudKit for persistent & cross-device sync
+- Add Core Data or CloudKit for persistent & cross-device sync
 
-Add offline caching of posts
+- Add offline caching of posts
 
-Improve UI/UX with animations & custom design
+- Improve UI/UX with animations & custom design
 
-Add unit tests for ViewModel & APIService
+- Add unit tests for ViewModel & APIService
 
-Add accessibility improvements (VoiceOver support)
+- Add accessibility improvements (VoiceOver support)
 
